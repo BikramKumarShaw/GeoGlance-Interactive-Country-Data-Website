@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GeoGlance - Interactive Country Data Website</title>
+    <link
+      rel="shortcut icon"
+      href="https://simpleicons.org/icons/circleci.svg"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:300,600,800"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./country.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-div">
+        <a href="/"><h2>Where in the world?</h2></a>
+        <div class="dark-btn">
+          <p class="">
+            <span><i class="fa-regular fa-moon"></i>Dark Mode</span>
+          </p>
+          <p class="hide">
+            <span><i class="fa-regular fa-sun"></i>Light Mode</span>
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="one-country-content">
+        <span class="back-btn"><i class="fa-solid fa-arrow-left"></i>Back</span>
+        <div class="country-details">
+          <img src="" alt="" />
+          <div class="full-card">
+            <h1></h1>
+            <div class="middle-details">
+              <div class="left">
+                <p>
+                  <span class="sub-details">Native Name: </span
+                  ><span class="native"></span>
+                </p>
+                <p>
+                  <span class="sub-details">Population: </span
+                  ><span class="population"></span>
+                </p>
+                <p>
+                  <span class="sub-details">Region: </span
+                  ><span class="region"></span>
+                </p>
+                <p>
+                  <span class="sub-details">Sub-Region: </span
+                  ><span class="sub-region"></span>
+                </p>
+                <p>
+                  <span class="sub-details">Capital: </span
+                  ><span class="capital"></span>
+                </p>
+              </div>
+              <div class="right">
+                <p>
+                  <span class="sub-details">Top Level Domain: </span
+                  ><span class="tld"></span>
+                </p>
+                <p>
+                  <span class="sub-details">Currencies: </span
+                  ><span class="currency"></span>
+                </p>
+                <p>
+                  <span class="sub-details">Languages: </span
+                  ><span class="language"></span>
+                </p>
+              </div>
+            </div>
+
+            <div class="border-details">
+              <span>Border Countries</span>
+              <div class="border-country"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
