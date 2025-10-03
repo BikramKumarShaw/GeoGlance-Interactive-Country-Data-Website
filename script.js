@@ -1,5 +1,6 @@
 const contentContainer = document.querySelector('.content');
 
+let allCountriesData = [];
 let allfilterCountriesData = [];
 
 fetch('data.json')
@@ -7,6 +8,7 @@ fetch('data.json')
 .then((data) => {
 
     allCountriesData = data;
+    allfilterCountriesData = data;
 
     data.forEach((country) => {
         renderCountry(country);
@@ -22,7 +24,6 @@ filterByRegion.addEventListener('change', (e) => {
     .then((data) => {
 
         allfilterCountriesData = data;
-        console.log(data)
 
         document.querySelector('.content').innerHTML = '';
 
